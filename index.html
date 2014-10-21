@@ -8,10 +8,16 @@
 
         <!-- Google Fonts -->
         <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
+        <!--done-->
+        <link rel="stylesheet" type="text/css" href="http://www.google.com/fonts#UsePlace:use/Collection:Bitter">
 
         <!-- Foundation CSS -->
         <!-- TODO link to foundation's normalize.css -->
+        <!--done-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <!-- TODO link to foundation's foundation.min.css -->
+        <!--done-->
+        <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 
         <!-- If you are using Foundation Sass, keep the head from their file. -->
 
@@ -35,13 +41,24 @@
                 <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
             </div>
 
-            <div><img src="images/chavez-1.jpg" alt=""></div>
             <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
+            <!--done???-->
+            <div #slides><img src="images/chavez-1.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-2.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-3.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-4.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-5.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-6.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-7.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-8.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-9.jpg" alt=""></div>
+            <div #slides><img src="images/chavez-10.jpg" alt=""></div>
         </header>
 
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
+            <div class="row">
 
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location">
@@ -63,7 +80,7 @@
                     limited menu: 3–5pm
                     dinner: 5–10pm
                 </div>
-
+            </div>
         </section>
 
         <!-- Menu -->
@@ -76,7 +93,7 @@
 
                 <!-- TODO write the following HTML for each of the menus.
 
-                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #menu-section-breakfast
+                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #breakfast  NOT #menu-section-breakfast
 
                 Give them a small-2 columns so they line up appropriately next to each other.
 
