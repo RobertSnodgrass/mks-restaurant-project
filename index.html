@@ -43,16 +43,18 @@
 
             <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
             <!--done???-->
-            <div #slides><img src="images/chavez-1.jpg" alt=""></div>
-            <!--<div #slides><img src="images/chavez-2.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-3.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-4.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-5.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-6.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-7.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-8.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-9.jpg" alt=""></div>
-            <div #slides><img src="images/chavez-10.jpg" alt=""></div>-->
+            <div id="slides">
+                <div><img src="images/chavez-1.jpg" alt=""></div>
+                <div><img src="images/chavez-2.jpg" alt=""></div>
+                <div><img src="images/chavez-3.jpg" alt=""></div>
+                <div><img src="images/chavez-4.jpg" alt=""></div>
+                <div><img src="images/chavez-5.jpg" alt=""></div>
+                <div><img src="images/chavez-6.jpg" alt=""></div>
+                <div><img src="images/chavez-7.jpg" alt=""></div>
+                <div><img src="images/chavez-8.jpg" alt=""></div>
+                <div><img src="images/chavez-9.jpg" alt=""></div>
+                <div><img src="images/chavez-10.jpg" alt=""></div>
+            </div>
         </header>
 
         <!-- Address, map, hours -->
@@ -86,7 +88,7 @@
         </section>
 
         <!-- Menu -->
-        <section class="menu column large-12">
+        <section class="menu columns large-12">
             <div class="row">
                 <h2>Menus</h2>
             </div>
@@ -102,71 +104,61 @@
                 One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
 
                 -->
-                <!--<div class="row">
-                    <div class="menu-section column small-2" id="Breakfast">Breakfast</div>
-                    <div class="menu-section column small-2" id="Lunch">Lunch</div>
-                    <div class="menu-section column small-2" id="Dinner">Dinner</div>
-                    <div class="menu-section column small-2" id="Dessert">Dessert</div>
-                    <div class="menu-section column small-2" id="Cocktails">Cocktails</div>
-                    <div class="menu-section column small-2" id="Wine">Wine</div>
-                </div>-->
-
-
                 <div class="menu-section column small-2" id="Breakfast">
-                    <h3>Breakfast
+                    <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+                        <a href="#">Breakfast
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
                 </div>
 
                 <div class="menu-section column small-2" id="Lunch">
-                    <h3>Lunch
+                    <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+                        <a href="#">Lunch
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
                 </div>
 
                 <div class="menu-section column small-2" id="Dinner">    
-                    <h3>Dinner
+                    <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+                        <a href="#">Dinner
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
                 </div>
 
                 <div class="menu-section column small-2" id="Dessert">
-                    <h3>Dessert
+                    <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+                        <a href="#">Dessert
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
                 </div>
 
                 <div class="menu-section column small-2" id="Cocktails">
-                    <h3>Cocktails
+                    <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+                        <a href="#">Cocktails
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
                 </div>
 
                 <div class="menu-section column small-2" id="Wine">
-                    <h3>Wine
+                    <h3>
                         <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
                         <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
+                        <a href="#">Wine
                             <!-- TODO name of menu section -->
                         </a>
                     </h3>
@@ -175,12 +167,12 @@
 
             </div>
             <!-- TODO add a foundation row to wrap around this content -->
+            <div class="row">
                 <div id="menu-section-content" class="menu-section-content">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
-
-                        <div class="menu-group">
+                        <div class="menu-group column small-6">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <h4>Raw Bar</h4>
 
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
 
@@ -189,35 +181,41 @@
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
                         </div>
                 </div>
-
+            </div>
         </section>
 
         <!-- Social media -->
         <section class="contact">
 
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? -->
-
+            <div class="row">
                 <!-- TODO for each of these 3 divs, add foundation columns so that they sit side by side. make them stack at small screen sizes. -->
 
-                <div class="email">
+                <div class="email column large-4 small-12">
                     <h5>Email</h5>
                     <!-- TODO make this an email link -->
                     info@chavez-austin.com
                 </div>
 
-                <div class="social">
+                <div class="social column large-4 small-12">
                     <h5>Social Media</h5>
                     <!-- TODO write a div.social-links. -->
+                    <div class="social links">
                         <!-- TODO inside that div, write a link that links to the social media links, and use the social media images in the image folder. -->
                             <!-- TODO Facebook http://facebook.com/ChavezATX -->
+                            <a href="http://facebook.com/ChavezATX"><img src="images/facebook.png"></a>
                             <!-- TODO Twitter http://twitter.com/ChavezATX -->
+                            <a href="http://twitter.com/ChavezATX"><img src="images/twitter.png"></a>
                             <!-- TODO Instagram http://instagram.com/ChavezATX -->
+                            <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png"></a>
+                    </div>
                 </div>
 
-                <div class="press columns small-4">
+                <div class="press column large-4 small-12">
+                    <!--the above originally said <div class="press columns small-4">-->
                     <h5>Press Inquiries</h5>
                     <!-- TODO make this an email link -->
-                    press@chavezrestaurant.com
+                    <a href="press@chavezrestaurant.com">press@chavezrestaurant.com</a>
                 </div>
 
             </div>
@@ -232,10 +230,37 @@
 
         <!-- Our JS -->
         <!-- TODO link to our script.js file -->
+        <script type="text/javascript" src="js/script.js"></script>
 
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
+        <script type="text/javascript" src="js/slick.min.js"></script>
+
         <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
+        <!--<script>slick(#slides)</script> this is what I originally wrote-->
+
+        <!--ATTEMPT #2 = Did something, but not what I wanted....
+        <script>
+            $('#slides').slick({
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 2000,
+            });
+        </script>-->
+
+        <!--S<script>$('#slides').slick()</script>-->
+        <!--SWEET BABY RIBS IT WORKS-->
+
+        <!--testing out parameters for slick-->
+        <script>$('#slides').slick({
+            autoplay: true,
+            autoplaySpeed: 800,
+            fade: true,
+            cssEase: 'linear',
+
+        })</script>
+
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
 
 
