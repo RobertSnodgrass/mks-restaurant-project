@@ -66,10 +66,10 @@
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location column large-4 small-12">   
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
+                    at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a>
                     111 east cesar chavez
                     austin, texas 78701
-                    512.478.2291
+                    <a href="tel:512.478.2291">512.478.2291</a>
                 </div>
 
                 <div class="map column large-4 small-12">
@@ -208,6 +208,7 @@
                             <a href="http://twitter.com/ChavezATX"><img src="images/twitter.png"></a>
                             <!-- TODO Instagram http://instagram.com/ChavezATX -->
                             <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png"></a>
+
                     </div>
                 </div>
 
@@ -237,7 +238,7 @@
         <script type="text/javascript" src="js/slick.min.js"></script>
 
         <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
-        <!--<script>slick(#slides)</script> this is what I originally wrote-->
+        <!--<script>slick(#slides)</script> this is what I originally wrote, which was obviously nonsense-->
 
         <!--ATTEMPT #2 = Did something, but not what I wanted....
         <script>
@@ -255,11 +256,12 @@
         <!--testing out parameters for slick-->
         <script>$('#slides').slick({
             autoplay: true,
-            autoplaySpeed: 800,
+            autoplaySpeed: 3000,
             fade: true,
             cssEase: 'linear',
 
         })</script>
+        <!--parameters apear to be working-->
 
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
 
