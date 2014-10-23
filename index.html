@@ -66,9 +66,9 @@
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location column large-4 small-12">   
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a>
-                    111 east cesar chavez
-                    austin, texas 78701
+                    at the <a href="http://www.radisson.com/austin-hotel-tx-78701/txaustdt">Radisson Hotel</a><br><br>
+                    111 east cesar chavez<br>
+                    austin, texas 78701<br>
                     <a href="tel:512.478.2291">512.478.2291</a>
                 </div>
 
@@ -79,10 +79,10 @@
 
                 <div class="hours column large-4 small-12">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
+                    <div class="hours-label">breakfast:</div> <div class="hours-value">6:30–11am</div><br />
+                    <div class="hours-label">lunch:</div> <div class="hours-value">11am–3pm</div><br>
+                    <div class="hours-label">limited menu:</div> <div class="hours-value">3–5pm</div><br>
+                    <div class="hours-label">dinner:</div> <div class="hours-value">5–10pm</div><br>
                 </div>
             </div>
         </section>
@@ -175,10 +175,82 @@
                             <h4>Raw Bar</h4>
 
                             <!-- TODO for each item on the menu, write a div.menu-item. -->
+                            <div class="menu-item">
+                                <div class="menu-item-dish">malpeque oyster</div>
+                                    <p class="menu-item-ingredients">prince edward island, canada </p>
+                                        <div class="menu-item-price">3</div>
+
+                                <div class="menu-item-dish">bluepoint oyster</div>
+                                    <p class="menu-item-ingredients">long island sound</p>
+                                        <div class="menu-item-price">3</div>
+
+                                <div class="menu-item-dish">seafood coctel</div>
+                                    <p class="menu-item-ingredients">shrimp, avocado, tomato, cucumber, onion</p>
+                                        <div class="menu-item-price">11</div>
+
+                                <div class="menu-item-dish">raw bass</div>
+                                    <p class="menu-item-ingredients">avocado, lime, guajillo</p>
+                                        <div class="menu-item-price">11</div>
+
+                                <div class="menu-item-dish">vuelve a la vida</div>
+                                    <p class="menu-item-ingredients">squid, shrime, salmon, spicy tomato, celery</p>
+                                        <div class="menu-item-price">9</div>
+
+                                <div class="menu-item-dish">ceviche traditional</div>
+                                    <p class="menu-item-ingredients">avocado, tomato, jalapeno</p>
+                                        <div class="menu-item-price">9</div>
+
+                                <div class="menu-item-dish">hamachi</div>
+                                    <p class="menu-item-ingredients">"horchata", orange</p>
+                                        <div class="menu-item-price">11</div>
+
+                                <div class="menu-item-dish">vegan ceviche</div>
+                                    <p class="menu-item-ingredients">chayote, cauliflower, beet, orange</p>
+                                        <div class="menu-item-price">8</div>
+
+                            <h4>Entrees</h4>
+
+                            <div class="menu-item-dish">carne asada</div>
+                                    <p class="menu-item-ingredients">flank steak, grilled onions, "pico de gallo" </p>
+                                        <div class="menu-item-price">19</div>
+
+                                <div class="menu-item-dish">grilled hen</div>
+                                    <p class="menu-item-ingredients">cauliflower, pickled red onions, salsa verde</p>
+                                        <div class="menu-item-price">16</div>
+
+                                <div class="menu-item-dish">lamb en mole</div>
+                                    <p class="menu-item-ingredients">poblano, chayote, tomatoes, raisins</p>
+                                        <div class="menu-item-price">22</div>
+
+                                <div class="menu-item-dish">blade steak al pastor</div>
+                                    <p class="menu-item-ingredients">charred tomato, radish, onion</p>
+                                        <div class="menu-item-price">22</div>
+
+                                <div class="menu-item-dish">striped bass</div>
+                                    <p class="menu-item-ingredients">hominy, mushrooms, chard, hoja santa, guajillo</p>
+                                        <div class="menu-item-price">23</div>
+
+                                <div class="menu-item-dish">salmon veracruz</div>
+                                    <p class="menu-item-ingredients">tomato, onion, peppers, capers, olives</p>
+                                        <div class="menu-item-price">19</div>
+
+                                <div class="menu-item-dish">herb crusted mahi mahi</div>
+                                    <p class="menu-item-ingredients">salsa negra, pineapple, turnips, scallion</p>
+                                        <div class="menu-item-price">22</div>
+
+                                <div class="menu-item-dish">grilled shrimp al mojo de ajo</div>
+                                    <p class="menu-item-ingredients">garlic, lime, tomato, tequila, greens, coronas</p>
+                                        <div class="menu-item-price">21</div>
+
+                                <div class="menu-item-dish">oak grilled filet</div>
+                                    <p class="menu-item-ingredients">"rajas", pasilla red wine reduction</p>
+                                        <div class="menu-item-price">36</div>
 
                                 <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
 
                                 <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                                
+                            </div> <!--menu-item-->
                         </div>
                 </div>
             </div>

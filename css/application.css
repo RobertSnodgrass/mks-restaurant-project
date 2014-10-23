@@ -29,19 +29,31 @@ header h1 {
     /* TODO make the font size larger than Foundation's default; I uesd 4.5em */
     font-size: 4.5em;
     /* TODO add a text-shadow on the h1 using rgba(34, 28, 18,.75) */
+    text-shadow: 0px 2px 2px rgba(34, 28, 18, .75);
 }
 
 header .tagline h4 {
     /* TODO make the tagline italic; you'll have to work hard to override Foundation's font-style: normal on all headers! */
+    font-style: italic;
     /* TODO add the same text-shadow */
+    text-shadow: 0px 2px 2px rgba(34, 28, 18, .75);
 }
 
 header .tagline {
     /* TODO center the text */
+    text-align: center;
     background: rgba(34, 28, 18,.5); /* I added this transparent background bar for you. */
     /* TODO add some padding to give it space around the text */
+    padding: 5px 5px 5px 5px;
     /* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
+    position: absolute;
+    top: 35%;
+    min-width: 100%;
     /* TODO when you make the slideshow work, the tagline will get hidden. why? what line of CSS do you have to write to make it appear ABOVE the slideshow? */
+    /*clear: both;   did not work*/
+    /*float: left;   did not work*/
+    z-index: 1000;  /*seems to work...*/
+
 }
 
 
@@ -64,17 +76,26 @@ section {
 
 .address {
     /* TODO give this section a background of #221c12 and a color of #fffdf0. make the text centered */
-    backgound: #221c12;
-    background-color: #fffdf0;
+    background: #221c12;
+    color: #fffdf0;
+
+    text-align: center;
 }
 
 .location,
 .hours {
     /* TODO give these two divs some padding so that they line up with the map */
+    padding: 100px 25px 25px 25px;
 }
 
-.hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ }
-.hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ }
+.hours-label { /* TODO style these with the appropriate font styles (bold/italic) */ 
+    font-weight: bold;
+    display: inline-block;
+}
+.hours-value { /* TODO style these with the appropriate font styles (bold/italic) */ 
+    font-style: italic;
+    display: inline-block;
+}
 
 
 
@@ -84,10 +105,13 @@ section {
 
 .menu {
     /* TODO give this section a color of #221c12 and a background of #fffdf0. give it some bottom padding so there's space below the text. */
+    color: #221c12;
+    background-color: #fffdf0;
 }
 
 .menu h2 {
     /* TODO make this font size larger than the Foundation default */
+    font-size: 4.5em;
 }
 
 .menu h2, .menu h3, .menu h4 {
@@ -100,11 +124,17 @@ section {
 
 .menu-section h3 a {
     /* TODO make menu section links a semi-transparent color rgba(34, 28, 18, .75). give them a 3px bottom border and give it a bit of space */
+    color: rgba(34, 28, 18, .75);
+    border-bottom: 3px;
     /* TODO give the menu section links a CSS transition so that when you hover them, the color fades in slowly */
+    transition: color 0.5s ease;
 }
 
 
 /* TODO on the menu section links, when hovered, make them the same color but 100% opacity instead of 75% (.75) and make the bottom border the same color. */
+.menu-section:hover {
+    color: rgba(34, 28, 18, 1);
+}
 
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
 
@@ -118,10 +148,22 @@ section {
 }
 
 /* TODO style the menu-item-dish to be bold */
+.menu-item-dish {
+    font-weight: bold;
+}
 
 /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
-
+.menu-item-ingredients{
+    font-style: italic;
+    display: inline;
+}
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
+.menu-item-price{
+    font-weight: bold;
+    opacity: 0.5;
+    display: inline-block;
+
+}
 
 
 .menu-item-name-no-description {
