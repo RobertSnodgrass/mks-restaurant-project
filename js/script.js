@@ -16,19 +16,19 @@ $(function() {
     // I've given all of the anchors the same class so that I can easily target
     // all of them with jQuery
 
-    $( document ).on( 'click', '.menu-section-item', function( event ) {
+    $(document).on( 'click', '.menu-section-item', function( event ) {
       // Prevent the default action of the event
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var  = $( this );
+      var id = $(this);
 
       // Remove the class 'is-active' from all menu item headings
-      $( '' ).removeClass( '' );
+      $('.menu-item').removeClass('is-active');
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
       // provides the visual cue for what's active via CSS
-      $( this ).addClass( '' );
+      $(this).addClass('is-active');
 
       // Once you're started with TODO #2, call the getMenu function here,
       // passing id as the argument
