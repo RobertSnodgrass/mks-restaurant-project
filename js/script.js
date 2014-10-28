@@ -98,6 +98,17 @@ $(function() {
       $('.menu-section-content').html( html );
     }
 
+    //if (json[i].content[j].ingredients === undefined)
+    //{
+    //
+    //}  if ingredients = something = print
+      //  if ingredients != something = do not print html 
+        //don't even need an else 
+    //else
+    //{
+    // var ingredientsExist = json[i].content[j].ingredients;
+    // return ingredientsExist;
+    //}
 
 
     // TODO #4 Call getMenu with a menu of your choice and set that menu's
